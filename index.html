@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sintony&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div style="display: flex;">
+        <nav class="nav">
+            <div class="nav-content">
+                <div class="nav-container">
+                    <div class="nav-btn-container">
+                        <button class="btn btnimage"></button>
+                        <button class="btn btncolor6"><i class="fas fa-plus"></i></button>
+                        <button class="btn btncolor1"><i class="fa fa-home"></i></button>
+                        <button class="btn btncolor2"><i class="fa fa-user"></i></button>
+                        <button class="btn btncolor8"><i class="fa fa-heart"></i></button>
+                        <button class="btn btncolor3"><i class="far fa-envelope-open"></i></button>
+                        <button class="btn btncolor4"><i class="fas fa-cog"></i></button>
+                        <button class="btn btncolor5"><i class="far fa-question-circle"></i></button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="page-container">
+            <div class="header-container">
+                <div class="search-container">
+                    <input type="text" placeholder="  Search food / resturant" class="searchTerm">
+                </div>
+                <div class="addtocart">
+                    <button type="button" id="addtocart">Add to cart</button>
+                </div>
+            </div>
+            <div class="introduction-container">
+                <div class="introduction-text">
+                    <p class="text-content">What do you eat today?</p>
+                    <h2 class="text-content-paragraph">Drag & drop meals to your list</h2>
+                    <button class="readBtn">Read More</button>
+                </div>
+                <img class="introduction-image" src="./img/img1.png">
+            </div>
+            <div class="favourite-container">
+                <h1 class="favourite-container-heading">Favourite Food Category</h1>
+                <div class="favourite-container-content">
+                    <div class="favourite-button">
+                        <button class="btn1 btncolor1"><i class="fas fa-bell"></i> </button>
+                        <label class="btnLabel">All</label>
+                    </div>
+                    <div class="favourite-button">
+                        <button class="btn1 btncolor2"><i class="fas fa-pizza-slice"></i></button>
+                        <label class="btnLabel">Italian</label>
+                    </div>
+                    <div class="favourite-button">
+                        <button class="btn1 btncolor3"><i class="fas fa-hamburger"></i></button>
+                        <label class="btnLabel">Chinese</label>
+                    </div>
+                    <div class="favourite-button">
+                        <button class="btn1 btncolor4"><i class="fas fa-cheese"></i></button>
+                        <label class="btnLabel">Greek</label>
+                    </div>
+                    <div class="favourite-button">
+                        <button class="btn1 btncolor8"><i class="fas fa-hryvnia"></i></button>
+                        <label class="btnLabel">Ukranian</label>
+                    </div>
+                    <div class="favourite-button">
+                        <button class="btn1 btncolor5"><i class="fas fa-rupee-sign"></i></button>
+                        <label class="btnLabel">Indian</label>
+                    </div>
+                    <div class="favourite-button">
+                        <button class="btn1 btncolor2"><i class="fas fa-drumstick-bite"></i></button>
+                        <label class="btnLabel">Grill</label>
+                    </div>
+                    <div class="favourite-button">
+                        <button class="btn1 btncolor4"><i class="fas fa-fish"></i></button>
+                        <label class="btnLabel">Sushi</label>
+                    </div>
+                </div>
+            </div>
+            <div class="recipes-container">
+                <div class="square-one">
+                    <div class="circle"></div>
+                    <div class="circle-text">
+                        <h2 class="square-text">Veg recipes of india</h2>
+                        <h3><span class="fa fa-star checked"></span>4.5 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$55.35</h3>
+                    </div>
+                </div>
+                <div class="square-two">
+                    <div class="circle-two"></div>
+                    <div class="circle-text">
+                        <h2 class="square-text">Pizza</h2>
+                        <h3><span class="fa fa-star checked"></span></i>4.5 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $55.35</h3>
+                    </div>
+                </div>
+                <div class="square-three">
+                    <div class="circle-three"></div>
+                    <div class="circle-text">
+                        <h2 class="square-text">Veg recipes of india</h2>
+                        <h3><span class="fa fa-star checked"></span>4.5 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $55.35</h3>
+                    </div>
+                </div>
+                <div class="square-four">
+                    <div class="circle-four"></div>
+                    <div class="circle-text">
+                        <h2 class="square-text">Veg burger</h2>
+                        <h3><span class="fa fa-star checked"></span>4.5 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$55.35</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="resturant-container-text">
+                <h1>Today's Options</h1>
+            </div>
+            <div class="resturant-container">
+                <div class="rectangle-one">
+                    <div class="shape-one"></div>
+                    <div class="shape-text-container">
+                        <h2 class="rectangle-text-title">Santoor Resturant</h2>
+                        <h4 class="rectangle-paragraph">Melborn city</h4>
+                        <h5>
+                            4.5
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </h5>
+                    </div>
+                </div>
+                <div class="rectangle-two">
+                    <div class="shape-two"></div>
+                    <div class="shape-text-container">
+                        <h2 class="rectangle-text-title">Foodie Resturant</h2>
+                        <h4 class="rectangle-paragraph">Melborn city</h4>
+                        <h5>
+                            4.5
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </h5>
+                    </div>
+                </div>
+                <div class="rectangle-three">
+                    <div class="shape-three"></div>
+                    <div class="shape-text-container">
+                        <h2 class="rectangle-text-title">Kacchi Resturant</h2>
+                        <h4 class="rectangle-paragraph">Melborn city</h4>
+                        <h5>
+                            4.5
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </h5>
+                    </div>
+                </div>
+                <div class="rectangle-four">
+                    <div class="shape-four"></div>
+                    <div class="shape-text-container">
+                        <h2 class="rectangle-text-title">Rabbit Resturant</h2>
+                        <h4 class="rectangle-paragraph">Melborn city</h4>
+                        <h5>
+                            4.5
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="sideBar" style="display: none;">
+            <div class="sidebar-container">
+                <div class="sidebar-container-image">
+                    <div class="sidebar-image">
+                        <button class="btn btnimage"></button>
+                    </div>
+                    <h4>Rummy jay</h4>
+                </div>
+                <div class="sidebar-header">
+                    <h2>
+                        Create your meal plan&nbsp;<button class="btncolor9"><i class="fas fa-plus"></i></button>
+                    </h2>
+                </div>
+                <div class="sidebar-container-contents">
+                    <div class="sidebar-btn">
+                        <button class="btncolor10">
+                            <i class="fas fa-hotdog"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar-quantity">
+                        <h3>X 1</h3>
+                    </div>
+                    <div class="sidebar-productname">
+                        <h7>Sandwich</h7>
+                        <h7>$15.35</h7>
+                    </div>
+                    <div class="sidebar-remove">
+                        <button class="btncolor11">
+                            <i class="fas fa-trash-alt"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="sidebar-payment">
+                    <div class="sidebar-payment-content">
+                        <h2 class="payment-text">PAY</h2>
+                    <button class="btncolor12 btn3">$85.35</button>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>

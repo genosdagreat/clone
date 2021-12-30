@@ -1,0 +1,618 @@
+html{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Sintony' sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: #F5F5FF;
+    height: 100vh;
+}
+  /* Navigation bar */
+.nav{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    /* align-items: center; */
+    background-color: #FFFFFF;
+}
+.nav-content{
+    display: flex;
+    /* align-items: center; */
+    justify-content:space-evenly;
+    width: 100px;
+    height: 100%;
+    /* background-color: coral; */
+}
+.nav-container{
+    display: flex;
+    flex-direction: column;
+    /* height: 100vh; */
+    /* justify-content: space-around; */
+    /* align-items: flex-start; */
+}
+.nav-btn-container{
+    display: flex;
+    height: 70%;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 15px;
+}
+.btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+ /* Entire page */
+.page-container{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    height: 100vh;
+    width: 100%;
+    /* border-radius: 15%; */
+    position: relative;
+    /* padding: 0px; */
+    margin-left: 7%;
+}
+
+ /* Header*/
+.header-container{
+    display: flex;
+    width: 70%;
+    /* height: 10%; */
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.search-container{
+    width: 50%;
+    display: flex;
+    align-self: center;
+}
+.searchTerm{
+    border-radius:25px;
+    width: 60%;
+    padding: 10px 55px;
+    border: none;
+}
+
+.addtocart{
+    display: flex;
+    width: 10%;
+    align-self: center;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration:double;
+    
+}
+#addtocart{
+    border-radius: 25px;
+    width: 100%;
+    padding: 8px 25px;
+    display: flex;
+    border: none;
+    background: #ffff;
+    font-size: 15px ;
+    cursor: pointer;
+   
+}
+
+
+
+
+ /*About us text content */
+.introduction-container{
+    display: flex;
+    width: 70%;
+    /* height: 20%; */
+    border-radius: 25px;
+    padding: 20px;
+    /* background: rgb(255,255,255); */
+    background: linear-gradient(90deg, rgba(255,255,255,1) 40%, rgba(255,215,223,1) 56%);
+}
+
+.introduction-text{
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: flex-end; */
+    /* width: 100%; */
+    margin: 10px;
+}
+.text-content{
+    font-family: 'Oswald', sans-serif;
+    font-size:40px;
+    margin: 10px 0px;
+}
+.text-content-paragraph{
+    font-size: 20px;
+    /* margin-top: auto; */
+    margin: 10px 0px;
+    font-family: 'Ubuntu Mono', monospace;
+}
+.introduction-image{
+    margin-top: -19px;
+    margin-left: 330px;
+}
+
+   
+ /*Favourite */
+.favourite-container{
+    /* display: flex; */
+    /* margin: 10px; */
+    width: 60%;
+    margin-bottom: 15px;
+}
+
+.favourite-container-heading{
+    font-family: 'PT Sans', sans-serif;
+}
+.favourite-container-content{
+    display: flex;
+    justify-content: space-between;
+}
+.favourite-button{
+    display: flex;
+    flex-direction: column;
+}
+.btn1{
+    border-radius:50%;
+    width: auto;
+    height: 100%;
+    margin-bottom: 15%;
+    padding: 15px 20px;
+    display:block;
+    border: none;
+    cursor: pointer;
+}
+.btnLabel{
+
+display: flex;
+justify-content: center;
+}
+/************ Recipes Section*************/
+
+.recipes-container{
+    display:flex;
+    width: 70%;
+    /* height: 20%; */
+    margin-top: 80px;
+    justify-content: space-between;
+}
+.square-one{
+    display: flex;
+    position: relative;
+    width: 200px;
+    height: 170px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    justify-content: center;
+}
+.circle{
+    position:absolute;
+    border-radius: 50%;
+    width:150px;
+    height:150px;
+    background-image: url(https://cdn.pixabay.com/photo/2021/01/06/10/11/burger-5893927_960_720.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 10%;
+    left:50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.square-text{
+    font-size: 16px;
+
+}
+.square-two{
+    display: flex;
+    position: relative;
+    width: 200px;
+    height: 170px;
+    background-color: #FFDDDC;
+    border-radius: 20px;
+    justify-content: center;
+}
+.circle-two{
+    position:absolute;
+    border-radius: 50%;
+    top: 5%;
+    width:150px;
+    height:150px;
+    background-image: url(https://cdn.pixabay.com/photo/2016/08/05/23/17/pizza-1573562_960_720.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    left:50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}
+.square-three{
+    display: flex;
+    position: relative;
+    width: 200px;
+    height: 170px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    justify-content: center;
+}
+.circle-three{
+    position:absolute;
+    border-radius: 50%;
+    width:150px;
+    height:150px;
+    background-image: url(https://cdn.pixabay.com/photo/2019/08/26/22/02/steak-4432943_960_720.jpg);
+    /* background-repeat: no-repeat; */
+    background-size: contain;
+    top: 5%;
+    left:50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}
+.square-four{
+    display: flex;
+    position: relative;
+    width: 200px;
+    height: 170px;
+    background-color: #FFDDDC;
+    border-radius: 20px;
+    justify-content: center;
+}
+.circle-four{
+    position:absolute;
+    border-radius: 50%;
+    top: 5%;
+    width:150px;
+    height:150px;
+    background-image: url(https://cdn.pixabay.com/photo/2020/08/05/09/01/hamburger-5464867_960_720.jpg);
+    /* background-repeat: no-repeat; */
+    background-size: contain;
+    left:50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.circle-text{
+    display:flex;
+    width: 140px;
+    align-items: center;
+    justify-content: flex-end;
+    font-size:10px;
+    flex-direction: column;
+    text-align: center;
+}
+/***************** Resturant Reviews ********************/
+
+.resturant-container{
+    width: 80%;
+    /* height: 21%; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: -3%;
+}
+.resturant-container-text {
+    width:60%;
+    font-family: 'Oswald', sans-serif;
+    text-align: left;
+}
+.shape-text-container{
+    width: 200px;
+    /* font-size: 5px; */
+    margin-left:100px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+}
+.rectangle-one{
+    display: flex;
+    height: 80px;
+    width: 300px;
+    background-color: #FFFFFF;
+    margin-top: 70px;
+    border-radius: 10px;
+    position: relative;
+}
+.shape-one{
+    height: 70px;
+    position:absolute;
+    width: 90px;
+    background-image: url(https://cdn.pixabay.com/photo/2017/04/20/06/22/food-2244724_960_720.jpg);
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+    transform: rotate(90deg);
+    border-radius: 10px;
+    top: -11%;
+    left: -1%;
+    right:1%;
+}
+
+.rectangle-two{
+    height: 80px;
+    width: 300px;
+    background-color: #FFFFFF;
+    margin-top: 70px;
+    border-radius: 10px;
+    position: relative;
+}
+.shape-two{
+    height: 70px;
+    position:absolute;
+    width: 90px;
+    background-image: url(https://cdn.pixabay.com/photo/2017/04/20/06/22/food-2244724_960_720.jpg);
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+    transform: rotate(90deg);
+    border-radius: 10px;
+    top: -11%;
+    left: -1%;
+    right:1%;
+}
+.rectangle-three{
+    height: 80px;
+    width: 300px;
+    background-color: #FFFFFF;
+    margin-top: 70px;
+    border-radius: 10px;
+    position: relative;
+}
+.shape-three{
+    height: 70px;
+    position:absolute;
+    width: 90px;
+    background-image: url(https://cdn.pixabay.com/photo/2017/04/20/06/22/food-2244724_960_720.jpg);
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+    transform: rotate(90deg);
+    border-radius: 10px;
+    top: -11%;
+    left: -1%;
+    right:1%;
+}
+.rectangle-four{
+    height: 80px;
+    width: 300px;
+    background-color: #FFFFFF;
+    margin-top: 70px;
+    border-radius: 10px;
+    position: relative;
+}
+.shape-four{
+    height: 70px;
+    position:absolute;
+    width: 90px;
+    background-image: url(https://cdn.pixabay.com/photo/2017/04/20/06/22/food-2244724_960_720.jpg);
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+    transform: rotate(90deg);
+    border-radius: 10px;
+    top: -11%;
+    left: -1%;
+    right:1%;
+}
+
+.rectangle-text-title{
+    font-size: 13px;
+}
+.rectangle-text{
+
+}
+.rectangle-paragraph{
+
+font-size: 11px;
+}
+
+/* Add items to cart (hidden only on click ) */
+
+#sideBar{
+     /* display: flex; */
+     /* flex-direction: column-reverse; */
+     /* align-items:flex-start; */
+     height: 100vh;
+     width: 24%;
+     background-color: #FFFFFF;
+     /* justify-content: center; */
+     position: absolute;
+     right: 0;
+}
+/*Items in the cart*/
+
+.sidebar-container{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 40px;
+}
+.sidebar-container-image{
+    display: flex;
+    margin-left: 25px;
+    width: 90%;
+    /* background-color: bisque; */
+}
+.sidebar-header{
+    font-family: 'Inter', sans-serif;
+    font-size: 21px;
+    margin-left: 25px;
+    width: 90%;
+}
+ 
+
+.sidebar-container-contents{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-left: 25px;
+    width: 86%;
+}
+.sidebar-btn{
+    display: flex;
+
+}
+.sidebar-productname{
+    display: flex;
+    flex-direction: column;
+    color: #B9BABE;
+    font-size: 13px;
+    margin-top: 15PX;
+}
+.sidebar-quantity{
+    display: flex;
+    margin-right: 50px;
+}
+.sidebar-remove{
+    display: flex;
+    margin-right:36px;
+}
+
+/*Paymant Section*/
+.sidebar-payment{
+    display: flex;
+    background-color : #FF6380;
+    width: 90%;
+    height: 75px;
+    margin-top: 80%;
+    margin-left: 25px;
+    border-radius: 5px;
+}
+.sidebar-payment-content{
+    width: 70%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+}
+.btn3{
+    width: 11%;
+    line-height: 19px;
+    padding: 7px 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FEB0BD;
+    border-radius: 10px;
+}
+
+.payment-text{
+    width: 37%;
+    font-size: 33px;
+    color: #ffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Button colors   */
+
+.btncolor1{
+    background-color:#FB9468;
+    color:  #FFFF;
+    font-size: 24px;
+}
+.btncolor2{
+    background-color: #2EBAF1;
+    color:  #FFFF;
+    font-size: 24px;
+}
+.btncolor3{
+    background-color: #C344D3;
+    color: #FFFF;
+    font-size: 24px;
+}
+.btncolor4{
+    background-color: #2BA460;
+    color:  #FFFF;
+    font-size: 24px;
+}
+.btncolor5{
+    background-color: #1074C1;
+    color: #FFFF;
+    font-size: 24px;
+    
+}
+.btncolor6{
+    background-color: #3B3B39;
+    color: #FFFF;
+    font-size: 24px;
+}
+.readBtn{
+    background-color: #6B65D3;
+    color: #FFFF;
+    padding: 10px 18px;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.btncolor8{
+    background-color: #FF7777;
+    color:  #FFFF;
+    font-size: 24px;
+}
+.btncolor9{
+    border: none;
+    background-color: #ffff;
+    font-size: 37px;
+    color: #F26A82;
+}
+.btncolor10{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: #A19EEE solid;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.btncolor11{
+    border: none;
+    background-color: #ffff;
+    color: #FB0101;
+    font-size:20px;
+    cursor: pointer;
+}
+
+.btnimage{
+    background-image: url(https://cdn.pixabay.com/photo/2020/05/16/19/58/man-5179003_960_720.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.checked{
+    color: orange;
+    font-size: 14px;
+}
+
+/***********************************/
+
