@@ -167,7 +167,7 @@ body{
     display:flex;
     width: 81%;
     /* height: 20%; */
-    margin-top: 80px;
+    margin-top: 90px;
     justify-content: space-between;
 }
 .square-one{
@@ -341,12 +341,13 @@ body{
 /***************** Resturant Reviews ********************/
 
 .resturant-container{
-    width: 80%;
+    width: 89%;
     /* height: 21%; */
     overflow-x: scroll;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-top: -3%;
+    /* flex-wrap: wrap; */
 }
 .resturant-container-text {
     width:60%;
@@ -365,7 +366,7 @@ body{
 .rectangle-one{
     display: flex;
     height: 80px;
-    width: 300px;
+    width: 250px;
     background-color: #FFFFFF;
     margin-top: 70px;
     border-radius: 10px;
@@ -377,7 +378,6 @@ body{
     height: 70px;
     position:absolute;
     width: 90px;
-    background-image: url(https://cdn.pixabay.com/photo/2017/04/20/06/22/food-2244724_960_720.jpg);
     /* background-size: contain; */
     background-repeat: no-repeat;
     transform: rotate(90deg);
@@ -389,7 +389,7 @@ body{
 
 .rectangle-two{
     height: 80px;
-    width: 300px;
+    width: 250px;
     background-color: #FFFFFF;
     margin-top: 70px;
     border-radius: 10px;
@@ -410,7 +410,7 @@ body{
 }
 .rectangle-three{
     height: 80px;
-    width: 300px;
+    width: 250px;
     background-color: #FFFFFF;
     margin-top: 70px;
     border-radius: 10px;
@@ -431,7 +431,7 @@ body{
 }
 .rectangle-four{
     height: 80px;
-    width: 300px;
+    width: 250px;
     background-color: #FFFFFF;
     margin-top: 70px;
     border-radius: 10px;
@@ -452,7 +452,7 @@ body{
 }
 .rectangle-five{
     height: 80px;
-    width: 300px;
+    width: 250px;
     background-color: #FFFFFF;
     margin-top: 70px;
     border-radius: 10px;
@@ -473,7 +473,7 @@ body{
 }
 .rectangle-six{
     height: 80px;
-    width: 300px;
+    width: 250px;
     background-color: #FFFFFF;
     margin-top: 70px;
     border-radius: 10px;
@@ -548,10 +548,12 @@ body{
     display: flex;
     justify-content: flex-start;
 }
-.sidebar-images{
+.sidebar-image{
     display: flex;
 }
- 
+ .sidebar-image-text{
+    display: flex;
+}
 
 .sidebar-container-contents{
     display: flex;
@@ -691,7 +693,7 @@ body{
     color: #FFFF;
 }
 .btnFont{
-    font-size: 25px;
+    font-size: 22px;
 }
 .readBtn{
     background-color: #6B65D3;
@@ -707,7 +709,7 @@ body{
 .btncolor8{
     background-color: #FF7777;
     color:  #FFFF;
-    font-size: 24px;
+    font-size: 16px;
 }
 .btncolor9{
     flex: 2;
@@ -733,6 +735,33 @@ body{
     font-size: 17px;
     cursor: pointer;
 }
+.btncolor12{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: #A8CEF0 solid;
+    cursor: pointer;
+    font-size: 15px;
+    background: url('https://api.iconify.design/mdi/fish.svg?color=%23d7683a') no-repeat center center / contain;
+}
+.btncolor13{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: #E7B188 solid;
+    cursor: pointer;
+    font-size: 15px;
+    background: url('https://api.iconify.design/emojione/sushi.svg?color=%23d7683a') no-repeat center center / contain;
+}
+.btncolor14{
+    background-color: #ffff;
+    color:  #261D56;
+    font-size: 17px;
+    cursor: pointer;
+    border: none;
+
+}
+
 
 .btnimage{
     background-image: url(https://cdn.pixabay.com/photo/2020/05/16/19/58/man-5179003_960_720.png);
@@ -753,11 +782,12 @@ body{
 }
 
 .btn{
-    width: 60px;
-    height: 60px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     border: none;
     cursor: pointer;
+    /* flex: 4; */
 }
 .btnLabel{
 
@@ -767,3 +797,38 @@ justify-content: center;
 
 /***********************************/
 
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+      url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+      url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+  }
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
