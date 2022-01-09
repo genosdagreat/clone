@@ -773,6 +773,33 @@ body{
     border: none;
 
 }
+.btncolor12{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: #A8CEF0 solid;
+    cursor: pointer;
+    font-size: 15px;
+    background: url('https://api.iconify.design/mdi/fish.svg?color=%23d7683a') no-repeat center center / contain;
+}
+.btncolor13{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: #E7B188 solid;
+    cursor: pointer;
+    font-size: 15px;
+    background: url('https://api.iconify.design/emojione/sushi.svg?color=%23d7683a') no-repeat center center / contain;
+}
+.btncolor14{
+    background-color: #ffff;
+    color:  #261D56;
+    font-size: 17px;
+    cursor: pointer;
+    border: none;
+
+}
+
 
 
 .btnimage{
@@ -807,6 +834,7 @@ body{
     border-radius: 50%;
     border: none;
     cursor: pointer;
+    /* flex: 4; */
 }
 .btnLabel{
     display: flex;
