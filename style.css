@@ -77,6 +77,7 @@ body{
     width: 60%;
     padding: 10px 55px;
     border: none;
+    font-size: 17px;
 }
 
 .addtocart{
@@ -84,8 +85,7 @@ body{
     width: 10%;
     align-self: center;
     font-family: 'Ubuntu', sans-serif;
-    text-decoration:double;
-    
+    /* text-decoration:double; */
 }
 #addtocart{
     border-radius: 25px;
@@ -94,8 +94,10 @@ body{
     display: flex;
     border: none;
     background: #ffff;
-    font-size: 15px;
+    font-size: 16px;
     cursor: pointer;
+    /* margin-left: 7px; */
+    justify-content: center;
 }
 
 
@@ -104,8 +106,7 @@ body{
  /*About us text content */
 .introduction-container{
     display: flex;
-    width: 81%;
-    /* height: 20%; */
+    width: 81%; 
     border-radius: 25px;
     padding: 20px;
     /* background: rgb(255,255,255); */
@@ -114,15 +115,15 @@ body{
 }
 
 .introduction-text{
-    display: flex; 
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 50%;
-    margin: 10px;  
+    margin-top: -30px;  
     /*check if there's a better way than using "margin" here */
 }
 .text-content{
-    font-family: 'Oswald', sans-serif;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 45px;
     /* margin: 2px 0px; */
     margin-bottom: -5px;
@@ -131,12 +132,7 @@ body{
     font-size: 26px;
     margin-top: auto;
     margin: 10px 0px;
-    font-family: 'Ubuntu Mono', monospace;
-}
-.introduction-image{
-    /* align-self: flex-end; */
-    /* margin-top: -19px; */
-    /* margin-left: 330px; */
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
    
@@ -149,7 +145,7 @@ body{
 }
 
 .favourite-container-heading{
-    font-family: 'Signika', sans-serif;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 24px;
 }
 .favourite-container-content{
@@ -165,9 +161,9 @@ body{
 
 .recipes-container{
     display:flex;
-    width: 81%;
+    width: 84%;
     /* height: 20%; */
-    margin-top: 80px;
+    margin-top: 90px;
     justify-content: space-between;
 }
 .square-one{
@@ -178,6 +174,7 @@ body{
     background-color: #FFFFFF;
     border-radius: 20px;
     justify-content: center;
+    cursor: pointer;
 }
 .circle{
     position:absolute;
@@ -205,6 +202,7 @@ body{
     background-color: #FFDDDC;
     border-radius: 20px;
     justify-content: center;
+    cursor: pointer;
 }
 .circle-two{
     position:absolute;
@@ -227,6 +225,7 @@ body{
     background-color: #FFFFFF;
     border-radius: 20px;
     justify-content: center;
+    cursor: pointer;
 }
 .circle-three{
     position:absolute;
@@ -249,6 +248,7 @@ body{
     background-color: #FFDDDC;
     border-radius: 20px;
     justify-content: center;
+    cursor: pointer;
 }
 .circle-four{
     position:absolute;
@@ -271,6 +271,7 @@ body{
     background-color: #FFFF;
     border-radius: 20px;
     justify-content: center;
+    cursor: pointer;
 }
 .circle-five{
     position:absolute;
@@ -293,6 +294,7 @@ body{
     background-color: #FFDDDC;
     border-radius: 20px;
     justify-content: center;
+    cursor: pointer;
 }
 .circle-six{
     position:absolute;
@@ -315,6 +317,7 @@ body{
     background-color: #FFFFFF;
     border-radius: 20px;
     justify-content: center;
+    cursor: pointer;
 }
 .circle-seven {
     position:absolute;
@@ -341,16 +344,17 @@ body{
 /***************** Resturant Reviews ********************/
 
 .resturant-container{
-    width: 80%;
+    width: 90%;
     /* height: 21%; */
     overflow-x: scroll;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: -3%;
+    /* flex-wrap: wrap; */
 }
 .resturant-container-text {
     width:60%;
-    font-family: 'Oswald', sans-serif;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-align: left;
 }
 .shape-text-container{
@@ -362,10 +366,17 @@ body{
     flex-direction: column;
     /* justify-content: center; */
 }
+.shape-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 10%;
+}
 .rectangle-one{
     display: flex;
     height: 80px;
-    width: 300px;
+    width: 250px;
     background-color: #FFFFFF;
     margin-top: 70px;
     border-radius: 10px;
@@ -377,7 +388,6 @@ body{
     height: 70px;
     position:absolute;
     width: 90px;
-    background-image: url(https://cdn.pixabay.com/photo/2017/04/20/06/22/food-2244724_960_720.jpg);
     /* background-size: contain; */
     background-repeat: no-repeat;
     transform: rotate(90deg);
@@ -389,7 +399,7 @@ body{
 
 .rectangle-two{
     height: 80px;
-    width: 300px;
+    width: 250px;
     background-color: #FFFFFF;
     margin-top: 70px;
     border-radius: 10px;
@@ -399,9 +409,6 @@ body{
     height: 70px;
     position:absolute;
     width: 90px;
-    background-image: url(https://cdn.pixabay.com/photo/2017/04/20/06/22/food-2244724_960_720.jpg);
-    /* background-size: contain; */
-    background-repeat: no-repeat;
     transform: rotate(90deg);
     border-radius: 10px;
     top: -11%;
@@ -410,7 +417,7 @@ body{
 }
 .rectangle-three{
     height: 80px;
-    width: 300px;
+    width: 250px;
     background-color: #FFFFFF;
     margin-top: 70px;
     border-radius: 10px;
@@ -420,9 +427,6 @@ body{
     height: 70px;
     position:absolute;
     width: 90px;
-    background-image: url(https://cdn.pixabay.com/photo/2017/04/20/06/22/food-2244724_960_720.jpg);
-    /* background-size: contain; */
-    background-repeat: no-repeat;
     transform: rotate(90deg);
     border-radius: 10px;
     top: -11%;
@@ -431,7 +435,7 @@ body{
 }
 .rectangle-four{
     height: 80px;
-    width: 300px;
+    width: 250px;
     background-color: #FFFFFF;
     margin-top: 70px;
     border-radius: 10px;
@@ -441,9 +445,6 @@ body{
     height: 70px;
     position:absolute;
     width: 90px;
-    background-image: url(https://cdn.pixabay.com/photo/2017/04/20/06/22/food-2244724_960_720.jpg);
-    /* background-size: contain; */
-    background-repeat: no-repeat;
     transform: rotate(90deg);
     border-radius: 10px;
     top: -11%;
@@ -452,7 +453,7 @@ body{
 }
 .rectangle-five{
     height: 80px;
-    width: 300px;
+    width: 250px;
     background-color: #FFFFFF;
     margin-top: 70px;
     border-radius: 10px;
@@ -462,9 +463,6 @@ body{
     height: 70px;
     position:absolute;
     width: 90px;
-    background-image: url(https://cdn.pixabay.com/photo/2017/04/20/06/22/food-2244724_960_720.jpg);
-    /* background-size: contain; */
-    background-repeat: no-repeat;
     transform: rotate(90deg);
     border-radius: 10px;
     top: -11%;
@@ -473,7 +471,7 @@ body{
 }
 .rectangle-six{
     height: 80px;
-    width: 300px;
+    width: 250px;
     background-color: #FFFFFF;
     margin-top: 70px;
     border-radius: 10px;
@@ -483,9 +481,6 @@ body{
     height: 70px;
     position:absolute;
     width: 90px;
-    background-image: url(https://cdn.pixabay.com/photo/2017/04/20/06/22/food-2244724_960_720.jpg);
-    /* background-size: contain; */
-    background-repeat: no-repeat;
     transform: rotate(90deg);
     border-radius: 10px;
     top: -11%;
@@ -548,10 +543,12 @@ body{
     display: flex;
     justify-content: flex-start;
 }
-.sidebar-images{
+.sidebar-image{
     display: flex;
 }
- 
+ .sidebar-image-text{
+    display: flex;
+}
 
 .sidebar-container-contents{
     display: flex;
@@ -575,29 +572,32 @@ body{
     /* margin-top: 15PX; */
     flex: 1.2;
 }
+.sidebar-price{
+    color: black;
+    font-family: 'Karla', sans-serif;
+}
 .sidebar-quantity{
     display: flex;
     /* margin-right: 50px; */
     flex: 1;
     
 }
-#quantityId{
-   
-}
 .sidebar-remove{
-    display: flex;
+    /* display: flex; */
     /* margin-right:36px; */
     flex: 1;
+    width: 100%;
+    height: 100%;
+    /* z-index: 10; */
 }
 
 /*Paymant Section*/
 .sidebar-payment{
     display: flex;
+    flex-direction:column;
     /* background-color : #FF6380; */
     width: 90%;
     height: 75px;
-    /* margin-top: 80%; */
-    /* margin-left: 17px; */
     border-radius: 5px;
     position: absolute;
     bottom: 89px;
@@ -613,28 +613,41 @@ body{
     padding: 10px;
     border-radius: 8px;
 }
-.btn3{
-    width: 100px;
-    line-height: 19px;
-    padding: 7px 45px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #FEB0BD;
-    border-radius: 8px;
-    color: #ffff;
-    border: none;
-    margin-right: 7.5px;
-    /* position: absolute; */
-}
+
 
 .payment-text{
     width: 37%;
-    font-size: 26px;
     color: #ffff;
     margin-left: 7.5px;
+    font-family: 'Asap', sans-serif;
+    font-size: 26px;
 }
 
+/*Credit cared information*/
+.sidebar-credit-content{
+    width: 74%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #F8F8F8;
+    margin-top: 10px;
+
+}
+.sidebar-credit-button{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+    
+
+}
+.credit-text{
+    font-family: 'Bona Nova', serif;
+    color: #0A56B7;
+}
 
 
 
@@ -691,7 +704,7 @@ body{
     color: #FFFF;
 }
 .btnFont{
-    font-size: 25px;
+    font-size: 22px;
 }
 .readBtn{
     background-color: #6B65D3;
@@ -707,7 +720,7 @@ body{
 .btncolor8{
     background-color: #FF7777;
     color:  #FFFF;
-    font-size: 24px;
+    /* font-size: 16px; */
 }
 .btncolor9{
     flex: 2;
@@ -732,7 +745,62 @@ body{
     color: #FB0101;
     font-size: 17px;
     cursor: pointer;
+    z-index: 1;
 }
+.btncolor12{
+    width: 40px; 
+    height: 40px;
+    border-radius: 50%; 
+    border: #A8CEF0 solid;
+    cursor: pointer;
+    font-size: 15px;
+    background: url('https://api.iconify.design/mdi/fish.svg?color=%23d7683a') no-repeat center center / contain;
+}
+.btncolor13{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: #E7B188 solid;
+    cursor: pointer;
+    font-size: 15px;
+    background: url('https://api.iconify.design/emojione/sushi.svg?color=%23d7683a') no-repeat center center / contain;
+}
+.btncolor14{
+    background-color: #ffff;
+    color:  #261D56;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+
+}
+.btncolor12{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: #A8CEF0 solid;
+    cursor: pointer;
+    font-size: 15px;
+    background: url('https://api.iconify.design/mdi/fish.svg?color=%23d7683a') no-repeat center center / contain;
+}
+.btncolor13{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: #E7B188 solid;
+    cursor: pointer;
+    font-size: 15px;
+    background: url('https://api.iconify.design/emojione/sushi.svg?color=%23d7683a') no-repeat center center / contain;
+}
+.btncolor14{
+    background-color: #ffff;
+    color:  #261D56;
+    font-size: 17px;
+    cursor: pointer;
+    border: none;
+
+}
+
+
 
 .btnimage{
     background-image: url(https://cdn.pixabay.com/photo/2020/05/16/19/58/man-5179003_960_720.png);
@@ -753,17 +821,85 @@ body{
 }
 
 .btn{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    /* flex: 4; */
+}
+.btn4{
     width: 60px;
     height: 60px;
     border-radius: 50%;
     border: none;
     cursor: pointer;
+    /* flex: 4; */
 }
 .btnLabel{
-
-display: flex;
-justify-content: center;
+    display: flex;
+    justify-content: center;
+    color: grey;
+    font-size: 18px;
+}
+.btnLabel2{
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 18px;
 }
 
+.btn3{
+    width: 100px;
+    line-height: 19px;
+    padding: 7px 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FEB0BD;
+    border-radius: 8px;
+    color: #ffff;
+    border: none;
+    margin-right: 7.5px;
+    cursor: pointer;
+}
+.btn5{
+    font-size: 55px;
+}
 /***********************************/
 
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+      url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+      url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+  }
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
