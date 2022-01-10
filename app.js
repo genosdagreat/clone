@@ -184,6 +184,7 @@ function generateMealOptions(){
     receipesContainer.innerHTML = "";
     for(let item of mealOptions){
         receipesContainer.innerHTML += `
+        <div class="myBox">
                 <div class="square-one" id="mealOptionObj-${item.id}">
                     <div class="circle"  id="mealOptionObj-${item.id}"  style= "background-image: ${item.img}"></div>
                     <div class="circle-text"  id="mealOptionObj-${item.id}">
@@ -191,11 +192,16 @@ function generateMealOptions(){
                         <h3><span class="fa fa-star checked"></span>4.5 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$55.35</h3>
                     </div>
                 </div>
-       
+        </div>
         `
     }
 
 }
+
+$(".myBox").click(function() {
+    window.location = $(this).find("a").attr("href"); 
+    return false;
+  });
 
 
 
