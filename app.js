@@ -108,7 +108,6 @@ function init() {
 function generateMealPlan() {
     let sidebarContents = document.getElementById('sidebar-list-contents');
     sidebarContents.innerHTML = '';
-
     for(let item of mealPlans){
         sidebarContents.innerHTML += `
         <div class="sidebar-container-contents" >
@@ -132,6 +131,25 @@ function generateMealPlan() {
     }
 }
 
+function generateMealOptions(){
+    let receipesContainer = document.querySelector(".recipes-container");
+    receipesContainer.innerHTML = "";
+    for(let item of mealOptions){
+        receipesContainer.innerHTML += `
+            <div id="option-container-${item.id}" style="width: 100%; height: 100%; position: relative; z-index: 999 !important; display: block;">
+                <div class="square-one" id="mealOptionObj-${item.id}">
+                    <div class="circle"  id="mealOptionObj-${item.id}"  style= "background-image: ${item.img}"></div>
+                    <div class="circle-text"  id="mealOptionObj-${item.id}">
+                        <h2 class="square-text" id="mealOptionObj-${item.id}">${item.name}</h2>
+                        <h3 id="mealOptionObj-${item.id}"><span class="fa fa-star checked" id="mealOptionObj-${item.id}"></span>4.5 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$55.35</h3>
+                    </div>
+                </div>
+            </div>
+        `
+    }
+
+}
+
 
 function addCustomEventListeners(){
     const removeBtns = document.querySelectorAll("[id^=mealObj]")
@@ -145,20 +163,38 @@ function addCustomEventListeners(){
         });
     }
 
-   
 }
 
 function addCustomMealOptionEventListeners(){
-    const mealOption = document.querySelectorAll("[id^=mealOptionObj]")
-    console.log(mealOption);
+    const mealOption = document.querySelectorAll("[id^=option-container]")
     for(let item of mealOption){
         item.addEventListener('click', function (element){
+            console.log('el target', element.target);
             const id = element.target.id.split('-')[1]
             console.log('id', id);
             console.log('element', element.target)
-            addMealPlan(id);
+            addToCart(id);
+            generateMealPlan();
+            addCustomEventListeners();
+            // addMealPlan(id);
         });
     }
+}
+
+function addToCart(id) {
+    for(let item of mealOptions){
+        if(item.id == id){
+            mealPlans.push({
+                id: (mealPlans.length + 1),
+                name: item.name,
+                price: item.price,
+                quantity: item.quantity,
+                img: "fa-hotdog"
+            })
+        }
+    }
+
+    console.log(mealPlans);
 }
 
 function removeMealPlan(id) {
@@ -171,31 +207,13 @@ function removeMealPlan(id) {
 
     init(); //calling of function 
 
-    function addMealPlan(id){
-      console.log(id);
-        generateMealOptions();
-        addCustomMealOptionEventListeners();
-    }
+    // function addMealPlan(id){
+    //   console.log(id);
+    //     generateMealOptions();
+    //     addCustomMealOptionEventListeners();
+    // }
 
 
-function generateMealOptions(){
-    let receipesContainer = document.querySelector(".recipes-container");
-
-    receipesContainer.innerHTML = "";
-    for(let item of mealOptions){
-        receipesContainer.innerHTML += `
-                <div class="square-one" id="mealOptionObj-${item.id}">
-                    <div class="circle"  id="mealOptionObj-${item.id}"  style= "background-image: ${item.img}"></div>
-                    <div class="circle-text"  id="mealOptionObj-${item.id}">
-                        <h2 class="square-text">${item.name}</h2>
-                        <h3><span class="fa fa-star checked"></span>4.5 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$55.35</h3>
-                    </div>
-                </div>
-       
-        `
-    }
-
-}
 
 
 

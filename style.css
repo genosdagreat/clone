@@ -2,6 +2,7 @@ html{
     width: 100%;
     margin: 0px;
     padding: 0px;
+    font-size:100%;
 }
 body{
     font-family: 'Sintony' sans-serif;
@@ -112,6 +113,9 @@ body{
     /* background: rgb(255,255,255); */
     background: linear-gradient(90deg, rgba(255,255,255,1) 40%, rgba(255,215,223,1) 56%);
     justify-content: space-between;
+}
+.introduction-image{
+    max-width: 100%;
 }
 
 .introduction-text{
